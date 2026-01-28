@@ -65,7 +65,7 @@ export const <LanguageName>Module: Module<<LanguageName>Services, PartialLangium
 ...
 
 // On the create services function, just after "shared.ServiceRegistry.register(<LanguageName>);"
-HelloWorld.HelloWorldAcceptWeaver; // This is to instantiate the accept weaver
+HelloWorld.visitors.HelloWorldAcceptWeaver; // This is to instantiate the accept weaver
 registerVisitorAsValidator(HelloWorld.visitors.HelloWorldTypeChecker, HelloWorld); // This is to register the validation visitor to the validation registry of Langium
 ```
 
